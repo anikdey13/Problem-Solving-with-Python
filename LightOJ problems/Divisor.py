@@ -14,13 +14,15 @@
 # 120   Case 2: 1 2 3 4 5 6 8 10 12 15 20 24 30 40 60 120
 # 49    Case 3: 1 7 49
 
-
 n = int(input())
 
 for i in range(1,n+1):
     T = int(input())
+    print('Case %i: '%i,end='')
     for k in range(1,T+1):
+        if k == T:
+           print(k) 
+           continue
         if T % k == 0:
-
             print(k, end=' ')
 
